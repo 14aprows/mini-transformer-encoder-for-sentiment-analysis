@@ -9,7 +9,7 @@ from trainer.trainer import Trainer
 
 
 def main():
-
+    torch.manual_seed(42)
     raw_train = load_dataset("ag_news", split="train[:10000]")
     texts = [item["text"] for item in raw_train]
 
