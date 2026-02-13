@@ -19,7 +19,7 @@ class PositionalEncoding(nn.Module):
     def forward(self, x):
         return x + self.pe[:, :x.size(1)]
 
-class TransformerEncoder(nn.Module):
+class TransformerClassifier(nn.Module):
     def __init__(self, vocab_size, num_classes=4, d_model=128, num_heads=4, num_layers=2, d_ff=256, max_len=64):
         super().__init__()
 
