@@ -1,6 +1,6 @@
 import torch 
 from torch.utils.data import Dataset
-from dataset import load_dataset
+from datasets import load_dataset
 from .build_vocab import tokenize
 
 class AGNewsDataset(Dataset):
